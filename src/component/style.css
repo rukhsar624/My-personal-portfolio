@@ -1,0 +1,74 @@
+.Banner-bg{
+    background-image: url("../assets/images/banner.svg");
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.Banner-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-bottom: 30px;
+    letter-spacing: -1.01px;
+    font-family: Montserrat,sans-serif;
+    margin-bottom: 0;
+
+}
+.services-img{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services-img img{
+    width: 100%;
+    height: 100%;
+}
+.services-text{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.my-portfolio{
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #0db3c7;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+}
+.my-portfolio-text{
+    font-size: 38px;
+    font-weight: 700;
+    color: #040c2c;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+    text-align: center;
+}
+.services-price{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-title{
+    font-family: Montserrat,sans-serif;
+    color: #0db3c7;
+    text-transform: capitalize;
+}
+.Portfolio1 , .Portfolio2{
+    width: 100%;
+    height: 100%;
+
+}
+.services-para{
+    color: #677294;
+
+}
