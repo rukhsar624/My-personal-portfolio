@@ -1,9 +1,11 @@
 import React from "react";
 import Services from "../assets/images/service.svg";
-import Mobile from "../assets/images/mobile.svg"
+import Mobile from "../assets/images/mobile.svg";
 import Portfolio1 from "../assets/images/portfolio1.jpg";
 import Portfolio2 from "../assets/images/portfolio2.jpg";
-import Testimonial from "../assets/images/testimonial.svg"
+import Testimonial from "../assets/images/testimonial.svg";
+import Postimg1 from "../assets/images/post-img1.jpg";
+import Postimg2 from "../assets/images/post-img2.jpg";
 import Header from "./header";
 import "../../node_modules/swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -86,26 +88,26 @@ const portfolio = () => {
                 <div className="row mt-5">
                   <div className="col-lg-6">
                     <div className="services-price">
-                    <h1>200</h1>
-                    <p>text</p>
+                      <h1>200</h1>
+                      <p>text</p>
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="services-price">
-                    <h1>200</h1>
-                    <p>text</p>
+                      <h1>200</h1>
+                      <p>text</p>
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="services-price">
-                    <h1>200</h1>
-                    <p>text</p>
+                      <h1>200</h1>
+                      <p>text</p>
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="services-price">
-                    <h1>200</h1>
-                    <p>text</p>
+                      <h1>200</h1>
+                      <p>text</p>
                     </div>
                   </div>
                 </div>
@@ -120,7 +122,7 @@ const portfolio = () => {
         </div>
       </section>
       <section>
-      <div className="container">
+        <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="services-img">
@@ -131,7 +133,64 @@ const portfolio = () => {
               <div className="services-text">
                 <h6 className="services-title">CUSTOMER FEEDBACK</h6>
                 <h1 className="">What Our Customers Say About John..</h1>
-                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="my-partner">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="services-text">
+                <h6 className="services-title">MY GREAT PARTNERS</h6>
+                <h1 className="">Some Of Great Companies Portfolios Discribe.</h1>
+                <p className="services-para">Cack brolly butty grub chancer smashing brilliant vagabond, chimney pot blower such a fibber ummm I'm telling chinwag he lost his bottle nancy boy.</p>
+                <div class="d-flex align-item-center pt-4">
+                  <div>
+                    <h1>1k</h1>
+                    <p>Total clients</p>
+                  </div>
+                  <div>
+                    <h1>1k</h1>
+                    <p>Total clients</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="services-img">
+                <img src={Services} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="blog-posts">
+        <h6 className="my-blog">OUR BLOG</h6>
+        <h1 className="my-blog-text">News And Updates</h1>
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="card">
+                <div className="blog-post-img position-relative">
+                  <div class="date text-center  d-flex position-absolute">
+                    <span>jan</span>
+                    <label>14</label>
+                  </div>
+                  <a href=""><img src={Postimg1} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="card">
+                <div className="blog-post-img position-relative">
+                  <div class="date text-center  d-flex position-absolute">
+                    <span>Mar</span>
+                    <label>30</label>
+                  </div>
+                  <a href=""><img src={Postimg2} alt="" /></a>
+                </div>
               </div>
             </div>
           </div>
