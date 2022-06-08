@@ -4,20 +4,11 @@ import "./footer-style.css"
 const Footer = () => {
   return (
     <>
-      <div className="footer">
+      <div className="footer mt-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <div className="d-flex justify-content-center bg-danger">
-                <div className="round">
-
-                </div>
-
-              </div>
-            </div>
-            <div className="col-lg-6 bg-warning">
-              <h5>Made with love by Blazethemez</h5>
-              <p>2020 BLAZETHEMEZ - ALL RIGHTS RESERVED</p>
+            <div className="col-lg-12">
+              <p className="footer-para">Made with ❤ by Rukhsar Anwar </p>
             </div>
           </div>
         </div>

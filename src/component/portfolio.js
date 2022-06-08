@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineArrowRight } from "react-icons/ai"
+import {GrPhone} from "react-icons/gr"
 import Services from "../assets/images/service.svg";
 import Mobile from "../assets/images/mobile.svg";
 import Portfolio1 from "../assets/images/portfolio1.jpg";
@@ -9,9 +11,10 @@ import Postimg2 from "../assets/images/post-img2.jpg";
 import Header from "./header";
 import "../../node_modules/swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import Footer from "./footer";
+import Footer from "./footer";
 import "./style.css";
-const portfolio = () => {
+const Portfolio = () => {
+  const [currentMode,setCurrentMode] =useState("White")
   return (
     <>
       <Header />
@@ -146,8 +149,8 @@ const portfolio = () => {
                 <h6 className="services-title">MY GREAT PARTNERS</h6>
                 <h1 className="">Some Of Great Companies Portfolios Discribe.</h1>
                 <p className="services-para">Cack brolly butty grub chancer smashing brilliant vagabond, chimney pot blower such a fibber ummm I'm telling chinwag he lost his bottle nancy boy.</p>
-                <div class="d-flex align-item-center pt-4">
-                  <div>
+                <div className="d-flex align-item-center pt-4">
+                  <div className="">
                     <h1>1k</h1>
                     <p>Total clients</p>
                   </div>
@@ -166,42 +169,155 @@ const portfolio = () => {
           </div>
         </div>
       </section>
-      <section className="blog-posts">
+      <section className="mt-5">
         <h6 className="my-blog">OUR BLOG</h6>
         <h1 className="my-blog-text">News And Updates</h1>
-        <div className="container mt-5">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="card">
-                <div className="blog-post-img position-relative">
-                  <div class="date text-center  d-flex position-absolute">
-                    <span>jan</span>
-                    <label>14</label>
+        <div className="container">
+          <div className="div1">
+            <div className="row">
+              <div className="col-lg-6">
+                <div>
+                  <div className="wrapper">
+                    <div className="navi">
+                      <div className="date text-center  d-flex position-absolute">
+                        <span>Jan<br />
+                          <br />
+                          14
+                        </span>
+                      </div>
+                      <img src={Postimg1} alt="" />
+                      <div className="infoi">
+                        <div className="fixed">
+                          <h6>BY:Tasnim | 0 comment</h6>
+                          <h2>Contrary to popular belief</h2>
+                          <p className="mt-4 pb-3">Suspendisse in mattis neque, sed accu- msan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam..</p>
+                          <div className="d-flex">
+                            <div>
+                              <h6>Read More</h6>
+                            </div>
+                            <div>
+                              <AiOutlineArrowRight />
+                            </div>
+                          </div>
+                          <div className="d-flex align-items-end flex-column">
+                            <div class="position-relative arrow-links">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <a href=""><img src={Postimg1} alt="" /></a>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="card">
-                <div className="blog-post-img position-relative">
-                  <div class="date text-center  d-flex position-absolute">
-                    <span>Mar</span>
-                    <label>30</label>
+              <div className="col-lg-6">
+                <div>
+                  <div className="wrapper">
+                    <div className="navi">
+                      <div className="date text-center  d-flex position-absolute">
+                        <span>Mar<br />
+                          <br />
+                          30
+                        </span>
+                      </div>
+                      <img src={Postimg2} alt="" />
+                      <div className="infoi">
+                        <div className="fixed">
+                          <h6 className="">BY:Tasnim | 0 comment</h6>
+                          <h2>Contrary to popular belief</h2>
+                          <p className="mt-4 pb-3">Suspendisse in mattis neque, sed accu- msan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam..</p>
+                          <div className="d-flex">
+                            <div className="">
+                              <h6>Read More</h6>
+                            </div>
+                            <div className="">
+                              <AiOutlineArrowRight />
+                            </div>
+                          </div>
+                          <div className="d-flex align-items-end flex-column">
+                            <div class="position-relative arrow-links">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <a href=""><img src={Postimg2} alt="" /></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <Footer />  */}
+      <section className="mt-5 pt-5">
+        <div className="container mt-5 pt-5">
+          <div className="row">
+            <div className="col-lg-6">
+              <h6 className="get">GET IN TOUCH</h6>
+              <h1 className="get-text">Talk Or Meet With Me</h1>
+              <div className="contact-info">
+                  <div className="first-col"><GrPhone/></div>
+                  <div className="first-col-inner">Call me now <br/>
+                  123-456-789-0
+                  </div>
+              </div>
+              <div className="contact-info">
+                  <div className="first-col"><GrPhone/></div>
+                  <div className="first-col-inner">Call me now <br/>
+                  123-456-789-0
+                  </div>
+              </div>
+              <div className="contact-info">
+                  <div className="first-col"><GrPhone/></div>
+                  <div className="first-col-inner">Call me now <br/>
+                  123-456-789-0
+                  </div>
+              </div>
+              <div className="contact-info">
+                  <div className="first-col"><GrPhone/></div>
+                  <div className="first-col-inner">Call me now <br/>
+                  123-456-789-0
+                  </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <h6 className="get">Contact Us</h6>
+              <h1 className="get-text">Let Me Know Here Know Here</h1>
+              <div className="row mt-5">
+                <div className="col-lg-6">
+                  <input type="text" class="from-control" placeholder="Your Name"/>
+                </div>
+                <div className="col-lg-6">
+                  <input type="email" class="from-control" placeholder="Your Email"/>
+                </div>
+                <div className="col-lg-6 mt-5">
+                  <input type="number" class="from-control" placeholder="Phone"/>
+                </div>
+                <div className="col-lg-6 mt-5">
+                  <input type="text" class="from-control" placeholder="Subject"/>
+                </div>
+                <div className="col-lg-12 mt-5">
+                <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+                </div>
+                <div className="col-lg-6">
+                  <a href="">
+                    <button type="button" className="btns">
+                        Send Message
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer /> 
     </>
   )
 }
 
-export default portfolio
+export default Portfolio
 
 
 
