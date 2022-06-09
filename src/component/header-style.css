@@ -9,8 +9,6 @@ nav{
     display: flex;
 }
 .logo{
-    /* width: 20%;
-    padding: 10px; */
     width: 200px;
     height: 90px;
     display: flex;
@@ -40,7 +38,9 @@ nav{
 .link a{
     text-decoration: none;
     margin:0 10px;
-    color: #6a0dad;
+    /* color: #6a0dad; */
+    /* color: #000; */
+    color: #FFF;
     align-items: center;
     font-weight: bold;
     padding-left: 10px;
@@ -49,12 +49,16 @@ nav{
     align-items: center;
     font: 600 14px/30px Montserrat,sans-serif;
     text-transform: uppercase;
-
+    
 }
 .react-switch-checkbox {
     height: 0;
     width: 0;
     visibility: hidden;
+    /* transform: scale(1.2);
+    transition: 0.5s all ease-in-out; */
+    transform: scale(2);
+    transition: transform 0.25s;
   }
   
   .react-switch-label {
@@ -68,7 +72,7 @@ nav{
     border-radius: 100px;
     position: relative;
     transition: background-color .2s;
-    top: 10px;
+    top: 9px;
   }
   
   .react-switch-label .react-switch-button {

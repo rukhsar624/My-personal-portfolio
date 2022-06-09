@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { FaLessThan } from "react-icons/fa";
 import { FaGreaterThan } from "react-icons/fa";
+import context from './context';
 // import { MdOutlineDarkMode } from "react-icons/md";
 import "./header-style.css";
 const Header = () => {
+    const userData = useContext(context)
     return (
         <>
             <header className="header">
@@ -29,10 +31,22 @@ const Header = () => {
                                         className="react-switch-checkbox"
                                         id={`react-switch-new`}
                                         type="checkbox"
+                                        onChange={() => {
+                                            if (userData.CurrentMode === "#FFF") {
+                                                userData.setCurrentMode("#000")
+                                                userData.setFontColor("#FFF")
+                                            }
+                                            else {
+                                                userData.setCurrentMode("#FFF")
+                                                userData.setFontColor("#000")
+                                            }
+                                            
+                                        }}
                                     />
                                     <label
                                         className="react-switch-label"
                                         htmlFor={`react-switch-new`}
+
                                     >
                                         <span className={`react-switch-button`} />
                                     </label>
