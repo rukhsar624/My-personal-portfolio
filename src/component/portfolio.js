@@ -18,8 +18,7 @@ import Footer from "./footer";
 import "./style.css";
 const Portfolio = () => {
 const userData = useContext(context)
-
- useEffect(()=>{
+useEffect(()=>{
   new WOW.WOW({
     live: false
 }).init();
@@ -41,7 +40,7 @@ const userData = useContext(context)
                 </div>
               </div>
               <div className="col-lg-6">
-
+              <img src={Mobile} alt="" />
               </div>
             </div>
           </div>

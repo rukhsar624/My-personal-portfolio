@@ -49,6 +49,7 @@ nav{
     align-items: center;
     font: 600 14px/30px Montserrat,sans-serif;
     text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
     
 }
 .react-switch-checkbox {
