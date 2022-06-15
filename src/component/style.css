@@ -1,4 +1,9 @@
-body::-webkit-scrollbar{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body::-webkit-scrollbar{
     width:12px;
     height:5px;
     background-color: #6a0dad;
@@ -50,7 +55,7 @@ body::-webkit-scrollbar-thumb{
     color: #6a0dad;
     font-weight: 600;
     margin-bottom: 15px;
-    font-family: Montserrat,sans-serif;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
 }
 .my-portfolio-text{
@@ -60,6 +65,11 @@ body::-webkit-scrollbar-thumb{
     text-transform: capitalize;
     letter-spacing: -2px;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.swiper-text{
+    font-family: 'Dancing Script', cursive;
+
 }
 .services-price{
     display: flex;
@@ -68,7 +78,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
 }
 .services-title{
-    font-family: Montserrat,sans-serif;
+    font-family: 'Dancing Script', cursive;
     color: #6a0dad;
     text-transform: capitalize;
 }
@@ -78,7 +88,15 @@ body::-webkit-scrollbar-thumb{
 }
 .services-para{
     color: #677294;
-
+    font-family: 'Dancing Script', cursive;
+}
+.services-para1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    color: #0db3c7;
+    opacity: .5;
+    margin-bottom: 5px;
 }
 .my-blog{
     font-size: 14px;
@@ -87,7 +105,7 @@ body::-webkit-scrollbar-thumb{
     color: #6a0dad;
     font-weight: 600;
     margin-bottom: 15px;
-    font-family: Montserrat,sans-serif;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
 }
 .my-blog-text{
@@ -97,6 +115,7 @@ body::-webkit-scrollbar-thumb{
     text-transform: capitalize;
     letter-spacing: -2px;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
 }
 .div1 {
     min-height: 580px;
@@ -138,6 +157,7 @@ body::-webkit-scrollbar-thumb{
     background-color: #FFF;
     color: #000;
     z-index: 1;
+    font-family: 'Dancing Script', cursive;
 }
 .get{
     font-size: 14px;
@@ -146,7 +166,7 @@ body::-webkit-scrollbar-thumb{
     color: #6a0dad;
     font-weight: 600;
     margin-bottom: 15px;
-    font-family: Montserrat,sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 .get-text{
     font-size: 38px;
@@ -154,10 +174,14 @@ body::-webkit-scrollbar-thumb{
     color: #6a0dad;
     text-transform: capitalize;
     letter-spacing: -2px;
+    font-family: 'Dancing Script', cursive;
 }
 .contact-info{
     display: flex;
     flex-direction: row;
+}
+.Comment{
+    font-family: 'Dancing Script', cursive;
 }
 .first-col{
     width: 170px;
@@ -174,6 +198,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     width: 190px;
     height: 102px;
+    font-family: 'Dancing Script', cursive;
 }
 *:focus {
     outline: none;
@@ -194,27 +219,33 @@ input {
     min-height: 44px;
     margin-bottom: 30px;
 }
-.form-control {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #494949;
-    box-shadow: none;
-    /* border: 1px solid #ededed; */
-    border-radius: 0;
-    padding-left: 20px;
-    text-transform: capitalize;
-    min-height: 44px;
-    margin-bottom: 30px;
-    border-radius: 0px;
-    border :1px solid #6a0dad;
-}
+
 .btns{
     background: #6a0dad;
     color: #fff;
     padding: 9px 30px;
     border: none;
-}    
+    font-family: 'Dancing Script', cursive;
+}  
+textarea.form-control{
+    border: 1px solid #6a0dad;
+    border-radius: 0px;
+
+}
+.form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    appearance: none;
+    border-radius: opx;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 50px;
+}  
 .frelencer_content h2 {
         font-size: 50px;
         font-weight: 700;
@@ -224,6 +255,7 @@ input {
         font-family: Montserrat,sans-serif;
         margin-bottom: 0;
         color: #000;
+        font-family: 'Dancing Script', cursive;
 }
 .frelencer_content h2 span {
     color: #6a0dad;
@@ -238,6 +270,7 @@ input {
     font-weight: 600;
     letter-spacing: 6px;
     color: #6a0dad;
+    font-family: 'Dancing Script', cursive;
 }
 .theme_btn.active {
     background: #6a0dad;
@@ -245,6 +278,7 @@ input {
     text-decoration: none;
     color: #fff;
     border-radius: 0px;
+    font-family: 'Dancing Script', cursive;
 }
 .theme_btn {
     margin-top: 40px;
@@ -270,3 +304,50 @@ input {
     text-align: center;
     display: inline-block;
 }
+
+
+
+
+
+
+.app {
+    margin-top: 10rem;
+    color: white;
+  }
+  
+  .slider {
+    position: relative;
+  }
+  
+  .slider__track {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    max-width: 120rem;
+    position: relative;
+    top: 0;
+  }
+  
+  .slider__btn {
+    align-items: center;
+    background: dark;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 3rem;
+    height: 5rem;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    width: 5rem;
+    z-index: 1;
+  }
+    
+  
+
+
+
+
+

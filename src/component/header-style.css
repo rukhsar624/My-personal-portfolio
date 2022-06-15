@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed;
     top: 0px;
+    z-index: 5;
 }
 nav{
     width: 100%;
@@ -39,8 +40,8 @@ nav{
     text-decoration: none;
     margin:0 10px;
     /* color: #6a0dad; */
-    /* color: #000; */
-    color: #FFF;
+    /* color: #FFF; */
+    color: #000;
     align-items: center;
     font-weight: bold;
     padding-left: 10px;

@@ -2,13 +2,26 @@ import React, { useState, useContext } from "react";
 import { FaLessThan } from "react-icons/fa";
 import { FaGreaterThan } from "react-icons/fa";
 import context from './context';
+import $ from 'jquery'
 // import { MdOutlineDarkMode } from "react-icons/md";
 import "./header-style.css";
 const Header = () => {
     const userData = useContext(context)
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+          $("#navbar-fixed-top").css("background", "#FFFFFF");
+          $("#navbar-fixed-top").css("box-shadow", "rgb(0 0 0 / 46%) 8px 8px 33px")
+        }
+        else {
+          $("#navbar-fixed-top").css("background", "none");
+          $("#navbar-fixed-top").css("box-shadow", "none")
+  
+        }
+      })
     return (
         <>
-            <header className="header">
+            <header className="header" id="navbar-fixed-top">
                 <div className="container">
                     <nav className="nav">
                         <div className="d-flex justify-content-between w-100">
@@ -19,7 +32,7 @@ const Header = () => {
                                     <span className=""><FaGreaterThan /></span></a>
                             </div>
                             <div className="link d-flex justify-content-end">
-                                <div className="d-flex justify-content-center">
+                                <div className="d-flex justify-content-center link-color">
                                     <a href="">Home</a>
                                     <a href="">Services</a>
                                     <a href="">Portfolio</a>
