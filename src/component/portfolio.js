@@ -43,6 +43,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="col-lg-6">
+
                 <img src={Mobile} alt="" />
 
               </div>
