@@ -90,6 +90,9 @@ body::-webkit-scrollbar-thumb{
     color: #677294;
     font-family: 'Dancing Script', cursive;
 }
+.users-total h1{
+    color: #0db3c7;
+}
 .services-para1{
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
@@ -304,12 +307,6 @@ textarea.form-control{
     text-align: center;
     display: inline-block;
 }
-
-
-
-
-
-
 .app {
     margin-top: 10rem;
     color: white;
@@ -344,8 +341,78 @@ textarea.form-control{
     width: 5rem;
     z-index: 1;
   }
+  .image-slider{
     
-  
+    width: 100px;
+    height: 100px;
+  }
+  .image-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    object-position: top;
+  }
+  .users-total{
+    width: 130px;
+  }
+  /* ===================  Max Media Queries ======================== */
+  @media only screen and (min-width:2560px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:1920px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:1600px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:1440px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:1366px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:1280px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:1024px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:820px){
+    #btn{
+        display:none ;
+    }
+  }
+  @media only screen and (min-width:768px){
+    #btn{
+        display:none ;
+    }
+  }
+
+/* ===================  Max Media Queries ======================== */
+  @media only screen and (max-width:600px) {}
+  @media only screen and (max-width:540px) {}
+  @media only screen and (max-width:414px) {}
+  @media only screen and (max-width:412px) {}
+  @media only screen and (max-width:393px) {}
+  @media only screen and (max-width:390px) {}
+  @media only screen and (max-width:375px) {}
+  @media only screen and (max-width:353px) {}
+  @media only screen and (max-width:320px) {}
 
 
 

@@ -3,22 +3,22 @@ import { FaLessThan } from "react-icons/fa";
 import { FaGreaterThan } from "react-icons/fa";
 import context from './context';
 import $ from 'jquery'
-// import { MdOutlineDarkMode } from "react-icons/md";
 import "./header-style.css";
 const Header = () => {
+    const [sideBar, setSideBar] = useState(false)
     const userData = useContext(context)
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
-          $("#navbar-fixed-top").css("background", "#FFFFFF");
-          $("#navbar-fixed-top").css("box-shadow", "rgb(0 0 0 / 46%) 8px 8px 33px")
+            $("#navbar-fixed-top").css("background", "#FFFFFF");
+            $("#navbar-fixed-top").css("box-shadow", "rgb(0 0 0 / 46%) 8px 8px 33px");
         }
         else {
-          $("#navbar-fixed-top").css("background", "none");
-          $("#navbar-fixed-top").css("box-shadow", "none")
-  
+            $("#navbar-fixed-top").css("background", "none");
+            $("#navbar-fixed-top").css("box-shadow", "none");
+
         }
-      })
+    })
     return (
         <>
             <header className="header" id="navbar-fixed-top">
@@ -29,17 +29,18 @@ const Header = () => {
                                 <a className="logo-name">
                                     <span className=""><FaLessThan /></span>
                                     <span className="logo-name">Rukhsar anwar/</span>
-                                    <span className=""><FaGreaterThan /></span></a>
+                                    <span className=""><FaGreaterThan /></span>
+                                </a>
                             </div>
                             <div className="link d-flex justify-content-end">
                                 <div className="d-flex justify-content-center link-color">
                                     <a href="">Home</a>
-                                    <a href="">Services</a>
-                                    <a href="">Portfolio</a>
-                                    <a href="">Skill</a>
-                                    <a href="">Testimonial</a>
-                                    <a href="">Blog</a>
-                                    <a href="">contact</a>
+                                    <a href="#services">Services</a>
+                                    <a href="#portfolio">Portfolio</a>
+                                    <a href="#skill">Skill</a>
+                                    <a href="#testimonial">Testimonial</a>
+                                    <a href="#Blog">Blog</a>
+                                    <a href="#contact">contact</a>
                                     <input
                                         className="react-switch-checkbox"
                                         id={`react-switch-new`}
@@ -53,7 +54,7 @@ const Header = () => {
                                                 userData.setCurrentMode("#FFF")
                                                 userData.setFontColor("#000")
                                             }
-                                            
+
                                         }}
                                     />
                                     <label
@@ -69,6 +70,52 @@ const Header = () => {
                         </div>
                     </nav>
                 </div>
+            </header>
+            <header className="mob-nav">
+
+                <div id="main-content">
+                    <div id="title">
+                    <a className="logo-name">
+                                    <span className=""><FaLessThan /></span>
+                                    <span className="logo-name">Rukhsar anwar/</span>
+                                    <span className=""><FaGreaterThan /></span>
+                    </a>
+                    </div>
+                </div>
+                {/* <div id="btn" className="">
+                <div id="top"></div>
+                <div id="middle"></div>
+                <div id="bottom"></div>
+                </div> */}
+                <button id="btn" onClick={() => {
+
+                    setSideBar(!sideBar)
+                }}
+                    title="Press Me">
+                    <div id="top"></div>
+                    <div id="middle"></div>
+                    <div id="bottom"></div>
+                </button>
+                {sideBar ? (<>
+                    <div>
+                        <div id="items">
+                            <div className="imglogo">
+                            <a className="logo-name">
+                                    <span className=""><FaLessThan /></span>
+                                    <span className="logo-name">Rukhsar anwar/</span>
+                                    <span className=""><FaGreaterThan /></span>
+                            </a>
+                            </div>
+                            <div className="item"><a href="./index.html" className="header_links active">Home</a></div>
+                            <div className="item"><a href="./assets/pages/about.html" className="header_links">About</a></div>
+                            <div className="item"><a href="./index.html?box=menu" className="header_links">menu</a></div>
+                            <div className="item"><a href="./assets/pages/blog.html" className="header_links">blog</a></div>
+                            <div className="item"><a href="./assets/pages/contact.html" className="header_links">contact us</a></div>
+
+                        </div>
+                    </div></>) : (null)
+
+                }
             </header>
         </>
     )

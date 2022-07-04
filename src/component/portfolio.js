@@ -11,6 +11,9 @@ import Portfolio2 from "../assets/images/portfolio2.jpg";
 import Testimonial from "../assets/images/testimonial.svg";
 import Postimg1 from "../assets/images/post-img1.jpg";
 import Postimg2 from "../assets/images/post-img2.jpg";
+import Sliderimg from "../assets/images/sliderimg.jpg";
+import SliderimgSecond from "../assets/images/slider.png";
+import Sliderimg3 from "../assets/images/sliderimg-3.jpg";
 import WOW from 'wowjs';
 import Header from "./header";
 import "../../node_modules/swiper/swiper-bundle.css";
@@ -35,11 +38,12 @@ const Portfolio = () => {
             <div className="row pt-5">
               <div className="col-lg-6 pt-5 mt-5">
                 <div class="frelencer_content">
-                  {/* <h2 className="Banner-title pt-5 wow fadeInLeft " style={{ color: userData.FontColor }} data-wow-delay="0.5s">Hey there!<br />
+                  <h2 className="Banner-title pt-5 wow fadeInLeft " style={{ color: userData.FontColor }} data-wow-delay="0.5s">Hey there!<br />
                     I'm Rukhsar Anwar Independent <span>Freelancer</span>
                   </h2>
-                  <h4 class="react-reveal"><span>I create thousand off website</span></h4>
-                  <a href="" class="react-reveal  theme_btn active">Hire me</a> */}
+                  <h4 className="react-reveal"><span>I create thousand off website</span></h4>
+                  <a href="" className="react-reveal  theme_btn active">Hire me</a>
+                  
                 </div>
               </div>
               <div className="col-lg-6">
@@ -51,7 +55,7 @@ const Portfolio = () => {
           </div>
         </section>
         <section >
-          <div className="container">
+          <div className="container" id="services">
             <div className="row">
               <div className="col-lg-6">
                 <div className="services-img">
@@ -69,7 +73,7 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-        <section className="My-Portfolio mt-5">
+        <section className="My-Portfolio mt-5" id="portfolio">
           <div className="container">
             <h6 className="my-portfolio">My Portfolio</h6>
             <h1 className="my-portfolio-text mb-5" style={{ color: userData.FontColor }}>Some Of My Latest Works.</h1>
@@ -99,7 +103,7 @@ const Portfolio = () => {
             </Swiper>
           </div>
         </section>
-        <section className="mt-5">
+        <section className="mt-5" id="skill">
           <div className="container mt-5 ">
             <div className="row">
               <div className="col-lg-6">
@@ -143,7 +147,7 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section id="testimonial">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
@@ -155,7 +159,85 @@ const Portfolio = () => {
                 <div className="services-text">
                   <h6 className="services-title">CUSTOMER FEEDBACK</h6>
                   <h1 className="services-title" style={{ color: userData.FontColor }}>What Our Customers Say About John..</h1>
+                  <div className="testimonials">
+                  <Swiper
+              spaceBetween={50}
+              slidesPerView={1}
+              loop={true}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}>
+                  <div>
+                  <SwiperSlide>
+                   <div>
+                   <p className="services-para">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                    
+                    </p>
+                    <div className="d-flex">
+                    <div className="">
+                        <div className="image-slider">
+                        <img src={Sliderimg} alt="" />
+
+                        </div>
+                    </div>
+
+                  </div>
+                   </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                   <div>
+                   <p className="services-para">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                    
+                    </p>
+                    <div className="d-flex">
+                    <div className="">
+                        <div className="image-slider">
+                        <img src={SliderimgSecond} alt="" />
+
+                        </div>
+                    </div>
+
+                  </div>
+                   </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                   <div>
+                   <p className="services-para">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, aperiam!
+                    
+                    </p>
+                    <div className="d-flex">
+                    <div className="">
+                        <div className="image-slider">
+                        <img src={Sliderimg3} alt="" />
+
+                        </div>
+                    </div>
+
+                  </div>
+                   </div>
+              </SwiperSlide>
+              
+                  </div>
+                  </Swiper>
+                 
+
                 </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -169,12 +251,12 @@ const Portfolio = () => {
                   <h1 className="" style={{ color: userData.FontColor }}>Some Of Great Companies Portfolios Discribe.</h1>
                   <p className="services-para" style={{ color: userData.FontColor }}>Cack brolly butty grub chancer smashing brilliant vagabond, chimney pot blower such a fibber ummm I'm telling chinwag he lost his bottle nancy boy.</p>
                   <div className="d-flex align-item-center pt-4">
-                    <div className="">
-                      <h1 className="services-para1" style={{ color: userData.FontColor }}>1k</h1>
+                    <div className="users-total">
+                      <h1 className="services-para1" >1k</h1>
                       <p className="services-para" style={{ color: userData.FontColor }}>Total clients</p>
                     </div>
-                    <div>
-                      <h1 className="services-para1" style={{ color: userData.FontColor }}>1k</h1>
+                    <div className="users-total">
+                      <h1 className="services-para1" >50</h1>
                       <p className="services-para" style={{ color: userData.FontColor }}>Total clients</p>
                     </div>
                   </div>
@@ -188,7 +270,7 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-        <section className="mt-5">
+        <section className="mt-5" id="Blog">
           <h6 className="my-blog">OUR BLOG</h6>
           <h1 className="my-blog-text" style={{ color: userData.FontColor }}>News And Updates</h1>
           <div className="container">
@@ -219,7 +301,7 @@ const Portfolio = () => {
                               </div>
                             </div>
                             <div className="d-flex align-items-end flex-column">
-                              <div class="position-relative arrow-links">
+                              <div className="position-relative arrow-links">
 
                               </div>
                             </div>
@@ -254,7 +336,7 @@ const Portfolio = () => {
                               </div>
                             </div>
                             <div className="d-flex align-items-end flex-column">
-                              <div class="position-relative arrow-links">
+                              <div className="position-relative arrow-links">
 
                               </div>
                             </div>
@@ -268,7 +350,7 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-        <section className="mt-5 pt-5">
+        <section className="mt-5 pt-5" id="contact">
           <div className="container mt-5 pt-5">
             <div className="row">
               <div className="col-lg-6">

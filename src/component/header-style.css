@@ -98,3 +98,101 @@ nav{
   .react-switch-label:active .react-switch-button {
     width: 60px;
   }
+  #main-content{
+    position: relative;
+}
+#title{
+    width: 20%;
+    left: 20px;
+    position: absolute;
+    top: 10px;
+}
+#title{
+    display: none;
+}
+#title img{
+    width: 70%;
+}
+#btn{
+    position: fixed;
+    z-index: 5;
+    /* top: 15px; */
+    top: 32px;
+    right: 15px;
+    cursor: pointer;
+    -webkit-transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    border: none;
+    background: transparent;
+
+}
+  #btn div{
+    width: 35px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #EB3006;
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
+    transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
+}
+#btn:hover > div { box-shadow: 0 0 1px #000708; }
+#btn.active{ right:12px; }
+#btn.active div{ background-color: #EB3006; }
+#btn.active:hover > div { box-shadow: 0 0 1px #343838; }
+#btn.active #top{
+    -webkit-transform: translateY(10px) rotate(-135deg);
+    -ms-transform: translateY(10px) rotate(-135deg);
+    transform: translateY(10px) rotate(-135deg);
+}
+#btn.active #middle{
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+#btn.active #bottom{
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+#box{
+    position: fixed;
+    z-index: 4;
+    overflow: auto;
+    top: 0px;
+    right: -275px;
+    background-color: #fff;
+    width: 275px;
+    opacity: 0;
+    padding: 20px 0px;
+    height: 100%;
+    color: #343838;
+    -webkit-transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+#box.active{
+    right: 0px;
+    opacity: 1;
+    border-bottom:#FFF;
+}
+#items{
+    position: relative;
+}
+#items a{
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+}
+#items .item{
+    position: relative;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 15px 30px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+#items .item:hover{
+    padding: 15px 45px;
+    background-color: rgba(52, 56, 56, 0.2);
+}
+  .header-icons{
+    width: 60%;
+}
