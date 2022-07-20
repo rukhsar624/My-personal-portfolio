@@ -14,6 +14,7 @@ import Postimg2 from "../assets/images/post-img2.jpg";
 import Sliderimg from "../assets/images/sliderimg.jpg";
 import SliderimgSecond from "../assets/images/slider.png";
 import Sliderimg3 from "../assets/images/sliderimg-3.jpg";
+import background from "../assets/images/background.jpg"
 import WOW from 'wowjs';
 import Header from "./header";
 import "../../node_modules/swiper/swiper-bundle.css";
@@ -33,11 +34,12 @@ const Portfolio = () => {
     <>
       <div className="body" style={{ backgroundColor: userData.CurrentMode }}>
         <Header />
-        <section className="Banner-bg">
+       <section className="Banner-bg-outer">
+          <div className="Banner-bg">
           <div className="container pt-5">
             <div className="row pt-5">
               <div className="col-lg-6 pt-5 mt-5">
-                <div class="frelencer_content">
+                <div className="frelencer_content">
                   <h2 className="Banner-title pt-5 wow fadeInLeft " style={{ color: userData.FontColor }} data-wow-delay="0.5s">Hey there!<br />
                     I'm Rukhsar Anwar Independent <span>Freelancer</span>
                   </h2>
@@ -47,22 +49,24 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-
+                <div className="banner-img">
                 <img src={Mobile} alt="" />
 
+                </div>
               </div>
             </div>
           </div>
-        </section>
+          </div>
+        </section> 
         <section >
           <div className="container" id="services">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="services-img">
                   <img src={Services} alt="" />
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="services-text">
                   <h6 className="services-title" style={{ color: userData.FontColor }}>what i do ?</h6>
                   <h1 className="services-title" style={{ color: userData.FontColor }}>Innovative Solutions To<br /> Grow Your Creative<br /> Projects</h1>
@@ -106,31 +110,31 @@ const Portfolio = () => {
         <section className="mt-5" id="skill">
           <div className="container mt-5 ">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="services-text">
                   <h6 className="services-title">MY FEATURED SKILLS</h6>
                   <h1 className="services-title" style={{ color: userData.FontColor }}>Some Interesting Facts About Me.</h1>
                   <p className="services-para" style={{ color: userData.FontColor }}>Horse play chinwag bog-standard loo cup of char fanny around tinkety tonk old fruit bog me old mucker is bits and bobs, mush cheeky bugger nancy boy.!</p>
                   <div className="row mt-5">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-sm-12">
                       <div className="services-price">
                         <h1 className="services-title" style={{ color: userData.FontColor }}><Counter start={0} end={200} /></h1>
                         <p className="services-title" style={{ color: userData.FontColor }}>text</p>
                       </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-sm-12">
                       <div className="services-price">
                         <h1 className="services-title" style={{ color: userData.FontColor }}><Counter start={0} end={120} /></h1>
                         <p className="services-title" style={{ color: userData.FontColor }}>text</p>
                       </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-sm-12">
                       <div className="services-price">
                         <h1 className="services-title" style={{ color: userData.FontColor }}><Counter start={0} end={4} /></h1>
                         <p className="services-title" style={{ color: userData.FontColor }}>text</p>
                       </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-sm-12 mb-5">
                       <div className="services-price">
                         <h1 className="services-title" style={{ color: userData.FontColor }}><Counter start={0} end={10} /></h1>
                         <p className="services-title" style={{ color: userData.FontColor }}>text</p>
@@ -139,7 +143,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="services-img">
                   <img src={Mobile} alt="" />
                 </div>
@@ -147,7 +151,7 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-        <section id="testimonial">
+       <section id="testimonial">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
@@ -241,7 +245,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> 
         <section className="my-partner">
           <div className="container">
             <div className="row">
@@ -270,7 +274,7 @@ const Portfolio = () => {
             </div>
           </div>
         </section>
-        <section className="mt-5" id="Blog">
+         <section className="mt-5" id="Blog">
           <h6 className="my-blog">OUR BLOG</h6>
           <h1 className="my-blog-text" style={{ color: userData.FontColor }}>News And Updates</h1>
           <div className="container">
@@ -296,7 +300,7 @@ const Portfolio = () => {
                               <div>
                                 <h6 className="Comment">Read More</h6>
                               </div>
-                              <div>
+                              <div className="arrow">
                                 <AiOutlineArrowRight />
                               </div>
                             </div>
@@ -331,7 +335,7 @@ const Portfolio = () => {
                               <div className="">
                                 <h6 className="Comment">Read More</h6>
                               </div>
-                              <div className="">
+                              <div className="arrow">
                                 <AiOutlineArrowRight />
                               </div>
                             </div>
@@ -349,8 +353,8 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section className="mt-5 pt-5" id="contact">
+        </section> 
+         <section className="mt-5 pt-5" id="contact">
           <div className="container mt-5 pt-5">
             <div className="row">
               <div className="col-lg-6">
@@ -384,21 +388,21 @@ const Portfolio = () => {
               <div className="col-lg-6">
                 <h6 className="get">Contact Us</h6>
                 <h1 className="get-text">Let Me Know Here Know Here</h1>
-                <div className="row mt-5">
-                  <div className="col-lg-6">
-                    <input type="text" class="from-control" placeholder="Your Name" />
+                <div className="row">
+                  <div className="col-lg-6 mb-5">
+                    <input type="text" className="from-control" placeholder="Your Name" />
                   </div>
-                  <div className="col-lg-6">
-                    <input type="email" class="from-control" placeholder="Your Email" />
+                  <div className="col-lg-6 mb-5">
+                    <input type="email" className="from-control" placeholder="Your Email" />
                   </div>
-                  <div className="col-lg-6 mt-5">
-                    <input type="number" class="from-control" placeholder="Phone" />
+                  <div className="col-lg-6 mb-5">
+                    <input type="number" className="from-control" placeholder="Phone" />
                   </div>
-                  <div className="col-lg-6 mt-5">
-                    <input type="text" class="from-control" placeholder="Subject" />
+                  <div className="col-lg-6 mb-5">
+                    <input type="text" className="from-control" placeholder="Subject" />
                   </div>
-                  <div className="col-lg-12 mt-5">
-                    <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+                  <div className="col-lg-12">
+                    <textarea name="message" id="message" className="form-control" rows="6" placeholder="Your Message"></textarea>
                   </div>
                   <div className="col-lg-6">
                     <a href="">
@@ -411,7 +415,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> 
 
         <Footer />
       </div>

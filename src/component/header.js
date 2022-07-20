@@ -75,11 +75,11 @@ const Header = () => {
 
                 <div id="main-content">
                     <div id="title">
-                    <a className="logo-name">
-                                    <span className=""><FaLessThan /></span>
-                                    <span className="logo-name">Rukhsar anwar/</span>
-                                    <span className=""><FaGreaterThan /></span>
-                    </a>
+                        <a className="logo-name">
+                            <span className=""><FaLessThan /></span>
+                            <span className="logo-name">Rukhsar anwar/</span>
+                            <span className=""><FaGreaterThan /></span>
+                        </a>
                     </div>
                 </div>
                 {/* <div id="btn" className="">
@@ -100,11 +100,11 @@ const Header = () => {
                     <div>
                         <div id="items">
                             <div className="imglogo">
-                            <a className="logo-name">
+                                <a className="logo-name">
                                     <span className=""><FaLessThan /></span>
                                     <span className="logo-name">Rukhsar anwar/</span>
                                     <span className=""><FaGreaterThan /></span>
-                            </a>
+                                </a>
                             </div>
                             <div className="item"><a href="./index.html" className="header_links active">Home</a></div>
                             <div className="item"><a href="./assets/pages/about.html" className="header_links">About</a></div>
