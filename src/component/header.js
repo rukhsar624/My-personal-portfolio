@@ -116,7 +116,7 @@
 // }
 // export default Header
 import {useRef} from "react";
-import {FaBars , faTimes} from "react-icons/fa";
+// import {FaBars , faTimes} from "react-icons/fa";
 import "./header-style.css";
 const Header = () => {
 function Navbar(){
@@ -135,14 +135,12 @@ return(
               <a href="/#">Home</a>
               <a href="/#">Home</a>
               <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                <faTimes/>
+                {/* <faTimes/> */}
               </button>
         </nav>
         <button className="nav-btn" onClick={showNavbar}>
-                <faBars/>
+                {/* <faBars/> */}
               </button>
     </header>
-);
-}
-}
+);}}
 export default Header
