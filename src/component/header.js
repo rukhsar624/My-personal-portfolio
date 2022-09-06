@@ -64,7 +64,6 @@ const Header = () => {
                                     >
                                         <span className={`react-switch-button`} />
                                     </label>
-                                    {/* <a href=""><MdOutlineDarkMode /></a> */}
                                 </div>
                             </div>
                         </div>
@@ -72,7 +71,6 @@ const Header = () => {
                 </div>
             </header>
             <header className="mob-nav">
-
                 <div id="main-content">
                     <div id="title">
                         <a className="logo-name">
@@ -82,11 +80,6 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
-                {/* <div id="btn" className="">
-                <div id="top"></div>
-                <div id="middle"></div>
-                <div id="bottom"></div>
-                </div> */}
                 <button id="btn" onClick={() => {
 
                     setSideBar(!sideBar)

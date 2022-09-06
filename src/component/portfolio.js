@@ -14,7 +14,6 @@ import Postimg2 from "../assets/images/post-img2.jpg";
 import Sliderimg from "../assets/images/sliderimg.jpg";
 import SliderimgSecond from "../assets/images/slider.png";
 import Sliderimg3 from "../assets/images/sliderimg-3.jpg";
-import background from "../assets/images/background.jpg"
 import WOW from 'wowjs';
 import Header from "./header";
 import "../../node_modules/swiper/swiper-bundle.css";
@@ -422,7 +421,6 @@ const Portfolio = () => {
     </>
   )
 }
-
 export default Portfolio
 
 
