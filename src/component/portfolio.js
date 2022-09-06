@@ -279,7 +279,7 @@ const Portfolio = () => {
           <div className="container">
             <div className="div1">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-5">
                   <div>
                     <div className="wrapper">
                       <div className="navi">
@@ -314,7 +314,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-5">
                   <div>
                     <div className="wrapper">
                       <div className="navi">
