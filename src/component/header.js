@@ -115,32 +115,14 @@
 //     )
 // }
 // export default Header
-import {useRef} from "react";
-// import {FaBars , faTimes} from "react-icons/fa";
-import "./header-style.css";
+
+import Navbar from "./navbar"
 const Header = () => {
-function Navbar(){
-    const navRef =useRef();
-    const showNavbar =()=>{
-        navRef.current.classList.toggle("responsive_nav");
-    }
-return(
-    <header>
-        <h3>logo</h3>
-        <nav ref={navRef}>
-              <a href="/#">Home</a>
-              <a href="/#">Home</a>
-              <a href="/#">Home</a>
-              <a href="/#">Home</a>
-              <a href="/#">Home</a>
-              <a href="/#">Home</a>
-              <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                {/* <faTimes/> */}
-              </button>
-        </nav>
-        <button className="nav-btn" onClick={showNavbar}>
-                {/* <faBars/> */}
-              </button>
-    </header>
-);}}
+    return(
+        <>
+        <Navbar/>
+        </>
+    );
+
+}
 export default Header

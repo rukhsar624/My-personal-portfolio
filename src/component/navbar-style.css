@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center; 
+    height: 80px;
+    padding: 0 2rem;
+    /* background-color: purple; */
+    background-color: #20267f;
+    color: black;
+}
+.logo-name{
+    font-family: 'Mr De Haviland', cursive;
+    color: #fff; 
+    font-size: 1.5rem;
+}
+nav a{
+    margin: 0 2rem;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 1.5rem;
+}
+nav a:hover{
+    color: aqua;
+}
+header .nav-btn{
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: blue;
+    visibility: hidden;
+    opacity: 0;
+}
+/* media queries */
+@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 2560px) {}
+/* media queries */
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width:1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+    header nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: blueviolet;
+        transition: 1s;
+        transform: translateY(-100vh);
+ 
+    }
+    header .responsive_nav{
+        transform: none;
+    }
+}
+@media only screen and (max-width: 820px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 700px) {}
+@media only screen and (max-width:414px){
+    .responsive-nav{
+      justify-content: center;
+      flex-direction: column;
+      z-index: 4;
+    }
+}
+@media only screen and (max-width: 390px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 360px) {}
