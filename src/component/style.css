@@ -381,6 +381,9 @@ textarea.form-control{
     #btn{
         display:none ;
     }
+    .infoi {
+        top: 350px;
+    }
   }
   @media only screen and (min-width:1366px){
     #btn{
@@ -401,9 +404,9 @@ textarea.form-control{
     #btn{
         display:none ;
     }
-    .infoi {
+    /* .infoi {
         top: 130px;
-    }
+    } */
   }
   @media only screen and (min-width:768px){
     #btn{

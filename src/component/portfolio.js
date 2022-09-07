@@ -39,9 +39,9 @@ const Portfolio = () => {
             <div className="row pt-5">
               <div className="col-lg-6 pt-5 mt-5">
                 <div className="frelencer_content">
-                  <h2 className="Banner-title pt-5 wow fadeInLeft " style={{ color: userData.FontColor }} data-wow-delay="0.5s">Hey there!<br />
+                  {/* <h2 className="Banner-title pt-5 wow fadeInLeft " style={{ color: userData.FontColor }} data-wow-delay="0.5s">Hey there!<br />
                     I'm Rukhsar Anwar Independent <span>Freelancer</span>
-                  </h2>
+                  </h2> */}
                   <h4 className="react-reveal"><span>I create thousand off website</span></h4>
                   <a href="" className="react-reveal  theme_btn active">Hire me</a>
                   
